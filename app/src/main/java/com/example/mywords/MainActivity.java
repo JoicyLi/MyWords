@@ -135,8 +135,6 @@ public class MainActivity extends AppCompatActivity {
                 //既可以使用Sql语句查询，也可以使用方法查询
                 SearchUseSql(questr);
 
-
-
             }
         });
 
