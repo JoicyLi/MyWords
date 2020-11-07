@@ -130,6 +130,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 dbFindAll();
 
+                String questr=(et_word.getText().toString());
+                ArrayList<Map<String, String>> items=null;
+                //既可以使用Sql语句查询，也可以使用方法查询
+                SearchUseSql(questr);
+
+
 
             }
         });
