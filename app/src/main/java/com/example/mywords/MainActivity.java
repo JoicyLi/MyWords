@@ -196,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
                 new int[]{R.id.tvID,R.id.tvWord,R.id.tvMean,R.id.tvEgg});
         listView.setAdapter(listAdapter);
     }
-    //数据更新
+    //数据修改
     protected void dbUpdate(){
         ContentValues values=new ContentValues();
         values.put("word",et_word.getText().toString().trim());
@@ -243,6 +243,7 @@ public class MainActivity extends AppCompatActivity {
         }
         showList();
     }
+
     protected void dbFindWord(){
         data.clear();
         String sql  = "select * from " +dbHelper.TB_NAME+
@@ -267,6 +268,7 @@ public class MainActivity extends AppCompatActivity {
         }
         showList();
     }
+
     private void SearchUseSql(String strWordSearch) {
         //SQLiteDatabase db = dbHelper.getReadableDatabase();
         data.clear();
